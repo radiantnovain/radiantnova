@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/radiantn/public_html
     - /bin/cp -R * $DEPLOYPATH
+    - composer install
