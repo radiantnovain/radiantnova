@@ -23,7 +23,7 @@
       rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>RadiantNova.in</title>
   </head>
   <body>
     <div class="container">
