@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/radiantn/public_html
-    - /bin/cp -R * $DEPLOYPATH
-    - cd $DEPLOYPATH && /usr/local/bin/composer install --no-dev --optimize-autoloader
