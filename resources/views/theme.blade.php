@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designer Gift Studio</title>
+    <title>RadiantNova</title>
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/theme.css'); }} ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
