@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363537;
+    gap: 25px;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #fff;
+}
+.sub-header .active {
+    background-color: #f09321;
+}
+.sub-header-item {
+    padding: 15px;
+
+}
+.logo-main {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
+.logo {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #363537;
+    font-size: 24px;
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #f09321;
+}
+
+.buttons .login {
+    border: 1px solid #f09321;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 9px 25px;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color:#f09321 ;
+    font-size: 18px;
+}
+.buttons .signup {
+    border: 1px solid #f09321;
+    border-radius: 5px;
+    background-color: #f09321;
+    padding: 9px 25px;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color:#fff ;
+    font-size: 18px;
+
+}
+
+.search {
+    width: 40%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #f09321;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #f09321;
+  }
+  
+  .searchTerm:focus{
+    color: #f09321;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #f09321;
+    background: #f09321;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
