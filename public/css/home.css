@@ -43,3 +43,17 @@
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 600;
 }
+@media only screen and (max-width: 768px) {
+    .hero {
+       flex-direction: column;
+    }
+    .right-hero {
+        width: 100%;
+        text-align: center;
+    }
+    .left-hero {
+        width: 88%;
+        padding: 30px;
+        text-align: center;
+    }
+}
