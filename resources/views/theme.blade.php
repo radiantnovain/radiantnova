@@ -113,7 +113,10 @@
 
 </div>
 
-<body></body>
+<body>
+@yield('content')
+
+</body>
 <script>
     document.getElementById('bar-button').addEventListener('click', function() {
         var targetBlock = document.getElementById('sidebar');
