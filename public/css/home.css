@@ -50,10 +50,12 @@
     .right-hero {
         width: 100%;
         text-align: center;
+        padding: 0;
     }
     .left-hero {
         width: 88%;
-        padding: 30px;
+        padding: 0px;
+        padding-bottom: 30px;
         text-align: center;
     }
 }
