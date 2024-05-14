@@ -5,37 +5,43 @@
     background-color: #f1f1f2;
     align-items: center;
 }
+
 .right-hero {
     width: 50%;
     padding: 30px;
-
 }
+
 .left-hero {
     width: 50%;
     padding: 30px;
 }
+
 .first-line {
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: #363537;
 }
+
 .second-line {
-    margin-top:10px;
+    margin-top: 10px;
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 900;
     font-size: 50px;
     color: #f09321;
 }
+
 .third-line {
-    margin-top:10px;
+    margin-top: 10px;
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 400;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
+
 .right-hero img {
     width: 80%;
 }
+
 .shop-now-button {
     background-color: #363537;
     color: #fff;
@@ -43,19 +49,23 @@
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 600;
 }
+
 @media only screen and (max-width: 768px) {
     .hero {
-       flex-direction: column;
+        flex-direction: column;
     }
+
     .right-hero {
         width: 100%;
         text-align: center;
         padding: 0;
     }
+
     .left-hero {
         width: 88%;
         padding: 0px;
         padding-bottom: 30px;
         text-align: center;
+        margin-top: 50px;
     }
 }
