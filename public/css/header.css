@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #363537;
+    background-color: #f09321;
     gap: 25px;
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
@@ -34,7 +34,7 @@ header {
     font-variation-settings: "wdth" 100;
 }
 .sub-header .active {
-    background-color: #f09321;
+    background-color: #363537;
 }
 .sub-header-2 .active {
     border-bottom: 2px solid #f09321;
@@ -103,13 +103,14 @@ header {
 
 .searchTerm {
     width: 100%;
-    border: 3px solid #f09321;
+    border: 1px solid #f09321;
     border-right: none;
-    padding: 5px;
-    height: 20px;
+    padding: 10px;
+    height: 18px;
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #f09321;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .searchTerm:focus {
@@ -117,8 +118,8 @@ header {
 }
 
 .searchButton {
-    width: 40px;
-    height: 36px;
+    width: 50px;
+    height: 40px;
     border: 1px solid #f09321;
     background: #f09321;
     text-align: center;
@@ -126,6 +127,10 @@ header {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .bars {
     display: none;

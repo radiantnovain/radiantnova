@@ -1,26 +1,51 @@
+.home-container {
+    background-color: #f1f1f2;
+}
+
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    background-color: #f1f1f2;
+    background-color: #333; /* Darker background color for contrast */
+    color: #fff; /* Text color for contrast */
     align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow effect */
 }
 
 .right-hero {
     width: 50%;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.right-hero img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+    object-fit: contain;
 }
 
 .left-hero {
     width: 50%;
     padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
 }
 
 .first-line {
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #363537;
+    color: #ffdb58; /* Updated for better contrast */
 }
 
 .second-line {
@@ -28,7 +53,7 @@
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 900;
     font-size: 50px;
-    color: #f09321;
+    color: #ffdb58; /* Updated for better contrast */
 }
 
 .third-line {
@@ -36,36 +61,139 @@
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 400;
     margin-bottom: 30px;
-}
-
-.right-hero img {
-    width: 80%;
+    color: #fff; /* Updated for better contrast */
 }
 
 .shop-now-button {
-    background-color: #363537;
-    color: #fff;
+    background-color: #ffdb58; /* Updated for better contrast */
+    color: #333; /* Text color to contrast the button */
     padding: 10px 20px;
     font-family: "Ubuntu Sans", sans-serif;
     font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
 }
 
+
+/* Trending Item CSS */
+
+.line-div {
+    background-color: #f09321;
+    width: 200px;
+    height: 2px;
+}
+.line-div-2 {
+    margin-top: 5px;
+    background-color: #ffdb58;
+    width: 100px;
+    height: 2px;
+}
+.trending-title {
+    text-align: center; 
+    background-color: #f1f1f2;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trending-title h2 {
+    margin: 10px;
+    font-family: "Ubuntu Sans", sans-serif;
+
+}
+
+.trending-items {
+    background-color: #f1f1f2;
+    padding: 30px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.item-slider {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+.item {
+    flex: 0 0 auto;
+    width: 225px; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right: 20px;
+    transition: transform 0.3s;
+    /* Remove padding from the individual items */
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    /* Add padding to the image */
+    padding: 0;
+}
+
+.item-content {
+    padding: 20px; /* Add padding to the container of price and title */
+}
+
+.item h3,
+.item .price,
+.item .description,
+.item .rating {
+    margin: 10px 0; /* Adjust margins as needed */
+}
+
+.item .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item .rating {
+    font-size: 14px;
+    color: #f09321; /* Rating color */
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* Hide scrollbar in WebKit */
+.item-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Add any additional styling as needed */
+
+
+/* Responsive CSS */
 @media only screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
+        padding: 0;
+        min-height: unset;
     }
 
-    .right-hero {
+    .right-hero, .left-hero {
         width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
         text-align: center;
-        padding: 0;
+        min-height: unset;
     }
 
     .left-hero {
-        width: 88%;
-        padding: 0px;
-        padding-bottom: 30px;
-        text-align: center;
-        margin-top: 50px;
+        margin-top: 20px;
+    }
+
+    .second-line {
+        font-size: 35px;
     }
 }
