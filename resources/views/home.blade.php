@@ -19,8 +19,6 @@
     <div class="trending-title">
         <h2>Trending 3D Printed Products</h2>
         <p class="subline">Discover the latest and most innovative 3D printed designs available today</p>
-        <!-- <div class="line-div"></div> -->
-        <!-- <div class="line-div-2"></div> -->
     </div>
 
 
@@ -138,10 +136,86 @@
                     Buy Now
                 </div>
             </div>
-
-
-            <!-- Add more items here -->
         </div>
+    </div>
+
+    <div class="mostbought-items">
+        <div class="mostbought-items-main">
+            <div class="mostbought-title">
+                <h2>Most Bought Products</h2>
+            </div>
+            <div class="image-cards-container">
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 1">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 2">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 3">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 4">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 5">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 6">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 7">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 8">
+                    <div class="title-overlay">Product 1</div>
+                </div>
+            </div>
+        </div>
+        <div class="mostbought-items-sub">
+            <div class="mostbought-title">
+                <h2>Special offers</h2>
+            </div>
+            <div class="special-offer-container">
+                <div class="special-offer-card">
+                    <img src="https://picsum.photos/200" alt="Special Offer 1">
+                    <div class="offer-details">
+                        <h3>Special Offer 1</h3>
+                        <p>Details about special offer 1.</p>
+                        <p class="price">$19.99</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="special-offer-card">
+                    <img src="https://picsum.photos/200" alt="Special Offer 1">
+                    <div class="offer-details">
+                        <h3>Special Offer 1</h3>
+                        <p>Details about special offer 1.</p>
+                    </div>
+                </div>
+                <div class="special-offer-card">
+                    <img src="https://picsum.photos/200" alt="Special Offer 1">
+                    <div class="offer-details">
+                        <h3>Special Offer 1</h3>
+                        <p>Details about special offer 1.</p>
+                    </div>
+                </div>
+                <div class="special-offer-card">
+                    <img src="https://picsum.photos/200" alt="Special Offer 1">
+                    <div class="offer-details">
+                        <h3>Special Offer 1</h3>
+                        <p>Details about special offer 1.</p>
+                    </div>
+                </div>
+                <div class="special-offer-card">
+                    <img src="https://picsum.photos/200" alt="Special Offer 1">
+                    <div class="offer-details">
+                        <h3>Special Offer 1</h3>
+                        <p>Details about special offer 1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

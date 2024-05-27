@@ -98,8 +98,6 @@
 .trending-title h2 {
     font-family: "Ubuntu Sans", sans-serif;
     margin: 25px 0px 0px 0px;
-   
-
 }
 .subline {
     margin: 0px;
@@ -223,6 +221,137 @@
 
 /* Add any additional styling as needed */
 
+
+
+/* Most Bought Items */
+.mostbought-title {
+    text-align: center; 
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mostbought-title h2 {
+    font-family: "Ubuntu Sans", sans-serif;
+    margin: 0;
+}
+
+.mostbought-title .subline {
+    margin-top: 10px;
+}
+
+.mostbought-items {
+    background-color: #f1f1f2;
+    padding: 30px;
+    display: flex;
+    gap:10px
+}
+
+.mostbought-items-main { 
+    width: 70%;
+    min-height: 100px;
+    background-color: #f09321;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.mostbought-items-sub { 
+    width: 30%;
+    min-height: 100px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.image-card {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-card img {
+    max-width: 100%;
+    transition: filter 0.3s ease;
+}
+
+.image-card .title-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-card:hover img {
+    filter: blur(4px);
+}
+
+.image-card:hover .title-overlay {
+    opacity: 1;
+}
+
+.special-offer-container { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.special-offer-card {
+    width: 90%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.special-offer-card img {
+    max-width: 60px;
+    border-radius: 5px;
+}
+
+.special-offer-card .offer-details h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+.special-offer-card .offer-details p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.special-offer-card .add-to-cart-btn {
+    background-color: #f09321;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 /* Responsive CSS */
 @media only screen and (max-width: 768px) {
