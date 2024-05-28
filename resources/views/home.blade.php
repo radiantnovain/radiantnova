@@ -144,6 +144,7 @@
             <div class="mostbought-title">
                 <h2>Most Bought Products</h2>
             </div>
+            <div class="scroll">
             <div class="image-cards-container">
                 <div class="image-card"><img src="https://picsum.photos/200" alt="Product 1">
                     <div class="title-overlay">Product 1</div>
@@ -170,6 +171,7 @@
                     <div class="title-overlay">Product 1</div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="mostbought-items-sub">
             <div class="mostbought-title">

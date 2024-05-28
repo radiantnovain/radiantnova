@@ -376,4 +376,50 @@
     .second-line {
         font-size: 35px;
     }
+
+
+    .mostbought-items {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .mostbought-items-main {
+        width: 100%;
+    }
+
+    .mostbought-items-sub{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .image-card .title-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 1.2em;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+    
+    .image-card:hover img {
+        filter: blur(4px);
+    }
+    
+    .image-card:hover .title-overlay {
+        opacity: 1;
+    }
+
+    .image-cards-container {
+        display: flex;
+        gap: 10px;
+        min-width: 500px;
+        max-width: 1000px;
+    }
+    .scroll{
+        overflow-y: auto;
+    }
 }
