@@ -183,8 +183,8 @@
                     <div class="offer-details">
                         <h3>Special Offer 1</h3>
                         <p>Details about special offer 1.</p>
-                        <p class="price">$19.99</p>
-                        <button class="add-to-cart-btn">Add to Cart</button>
+                        <!-- <p class="price">$19.99</p>
+                        <div><button class="add-to-cart-btn">Add to Cart</button></div> -->
                     </div>
                 </div>
                 <div class="special-offer-card">
@@ -218,6 +218,146 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="trending-title">
+        <h2>Recommended for you</h2>
+        <p class="subline">Some special products for you</p>
+    </div>
+
+
+
+    <!-- Trending Section -->
+    <div class="trending-items">
+        <div class="item-slider">
+            <div class="item">
+                <div class="item-2">
+
+                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                    <div class="item-content">
+                        <div class="first-line-product">
+                            <div class="product-heading">
+                                <h3>Product Name 1</h3>
+                            </div>
+                            <div class="add-to-cart-btn">
+                                Add to Cart
+                            </div>
+                        </div>
+                        <p class="description">Description will appear here for this product or item.</p>
+                        <p class="price">$19.99</p>
+                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                    </div>
+                </div>
+                <div class="lower-btn">
+                    Buy Now
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-2">
+
+                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                    <div class="item-content">
+                        <div class="first-line-product">
+                            <div class="product-heading">
+                                <h3>Product Name 1</h3>
+                            </div>
+                            <div class="add-to-cart-btn">
+                                Add to Cart
+                            </div>
+                        </div>
+                        <p class="description">Description will appear here for this product or item.</p>
+                        <p class="price">$19.99</p>
+                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                    </div>
+                </div>
+                <div class="lower-btn">
+                    Buy Now
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-2">
+
+                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                    <div class="item-content">
+                        <div class="first-line-product">
+                            <div class="product-heading">
+                                <h3>Product Name 1</h3>
+                            </div>
+                            <div class="add-to-cart-btn">
+                                Add to Cart
+                            </div>
+                        </div>
+                        <p class="description">Description will appear here for this product or item.</p>
+                        <p class="price">$19.99</p>
+                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                    </div>
+                </div>
+                <div class="lower-btn">
+                    Buy Now
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-2">
+
+                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                    <div class="item-content">
+                        <div class="first-line-product">
+                            <div class="product-heading">
+                                <h3>Product Name 1</h3>
+                            </div>
+                            <div class="add-to-cart-btn">
+                                Add to Cart
+                            </div>
+                        </div>
+                        <p class="description">Description will appear here for this product or item.</p>
+                        <p class="price">$19.99</p>
+                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                    </div>
+                </div>
+                <div class="lower-btn">
+                    Buy Now
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-2">
+
+                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                    <div class="item-content">
+                        <div class="first-line-product">
+                            <div class="product-heading">
+                                <h3>Product Name 1</h3>
+                            </div>
+                            <div class="add-to-cart-btn">
+                                Add to Cart
+                            </div>
+                        </div>
+                        <p class="description">Description will appear here for this product or item.</p>
+                        <p class="price">$19.99</p>
+                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                    </div>
+                </div>
+                <div class="lower-btn">
+                    Buy Now
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-gift">
+        <div class="svg-special-gift">
+            <img src="{{URL::asset('imgs/gift.svg');}}" alt="">
+        </div>
+    <div class="content-special-gift">
+        <div class="main-text">
+            Special Gifts for Special ones
+        </div>
+        <div class="main-text-2">
+            Get Special Discount on Gift purchase
+        </div>
+        <div class="special-gift-button">
+            <button>Grab Now</button>
+        </div>
+    </div>
     </div>
 </div>
 

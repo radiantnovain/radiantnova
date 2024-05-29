@@ -74,7 +74,6 @@
     align-self: flex-start;
 }
 
-
 /* Trending Item CSS */
 
 .line-div {
@@ -89,9 +88,9 @@
     height: 2px;
 }
 .trending-title {
-    text-align: center; 
+    text-align: center;
     background-color: #f1f1f2;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -103,7 +102,7 @@
     margin: 0px;
     font-family: "Ubuntu Sans", sans-serif;
     color: #696868;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -141,7 +140,6 @@
     font-weight: 500;
     color: white;
     font-family: "Ubuntu Sans", sans-serif;
-
 }
 .item-2 {
     /* padding: 10px; */
@@ -163,7 +161,6 @@
     padding-top: 0px !important;
     padding: 10px;
     font-family: "Ubuntu Sans", sans-serif;
-
 }
 .add-to-cart-btn {
     font-size: 12px;
@@ -221,12 +218,10 @@
 
 /* Add any additional styling as needed */
 
-
-
 /* Most Bought Items */
 .mostbought-title {
-    text-align: center; 
-    color:white;
+    text-align: center;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,10 +243,10 @@
     background-color: #f1f1f2;
     padding: 30px;
     display: flex;
-    gap:10px
+    gap: 10px;
 }
 
-.mostbought-items-main { 
+.mostbought-items-main {
     width: 70%;
     min-height: 100px;
     background-color: #f09321;
@@ -265,7 +260,7 @@
     gap: 10px;
 }
 
-.mostbought-items-sub { 
+.mostbought-items-sub {
     width: 30%;
     min-height: 100px;
     background-color: #333;
@@ -308,7 +303,7 @@
     opacity: 1;
 }
 
-.special-offer-container { 
+.special-offer-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -353,6 +348,46 @@
     cursor: pointer;
 }
 
+.special-gift {
+    display: flex;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 55px 10px;
+}
+.svg-special-gift,
+.content-special-gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.content-special-gift {
+    flex-direction: column;
+}
+.svg-special-gift img {
+    width: 70%;
+}
+.content-special-gift .main-text {
+    font-family: roboto;
+    font-size: 38px;
+    font-weight: 200;
+}
+.main-text-2 {
+    font-size: 18px;
+}
+.special-gift-button button {
+    background-color: #f09321;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
 /* Responsive CSS */
 @media only screen and (max-width: 768px) {
     .hero {
@@ -361,7 +396,8 @@
         min-height: unset;
     }
 
-    .right-hero, .left-hero {
+    .right-hero,
+    .left-hero {
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
@@ -377,17 +413,17 @@
         font-size: 35px;
     }
 
-
     .mostbought-items {
         flex-direction: column;
         padding: 0px;
+        gap: 0;
     }
 
     .mostbought-items-main {
         width: 100%;
     }
 
-    .mostbought-items-sub{
+    .mostbought-items-sub {
         width: 100%;
         padding: 0px;
     }
@@ -404,11 +440,11 @@
         transition: opacity 0.3s ease;
         pointer-events: none;
     }
-    
+
     .image-card:hover img {
         filter: blur(4px);
     }
-    
+
     .image-card:hover .title-overlay {
         opacity: 1;
     }
@@ -416,10 +452,21 @@
     .image-cards-container {
         display: flex;
         gap: 10px;
-        min-width: 500px;
-        max-width: 1000px;
+        width: 1000px;
     }
-    .scroll{
+    .scroll {
         overflow-y: auto;
+    }
+    .special-gift {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .svg-special-gift{
+        width: 95%;
+    }
+    .svg-special-gift, .content-special-gift {
+        width: 95%;
+        text-align: center;
     }
 }
