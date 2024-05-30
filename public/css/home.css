@@ -141,6 +141,11 @@
     color: white;
     font-family: "Ubuntu Sans", sans-serif;
 }
+
+.lower-btn a{
+    text-decoration: none;
+    color: white;
+}
 .item-2 {
     /* padding: 10px; */
 }

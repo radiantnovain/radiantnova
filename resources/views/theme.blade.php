@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'Product Details')</title>
+    <link rel="stylesheet" href="{{ asset('css/product-detail.css') }}">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,8 +49,8 @@
         </svg>
     </div>
     <div class="search">
-        <input type="text" class="searchTerm" placeholder="What are you looking for?">
-        <button type="submit" class="searchButton">
+        <input  class="searchTerm" placeholder="What are you looking for?">
+        <button class="searchButton">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
             </svg>
@@ -55,7 +59,6 @@
     <div class="buttons">
         <button class="login">Login</button>
         <button class="signup">Signup</button>
-
     </div>
 </header>
 <div class="sidebar" id="sidebar">
@@ -120,6 +123,42 @@
 
 <body>
     @yield('content')
+  
+    
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="loginClose">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="signupClose">&times;</span>
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="signupUsername" required>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+                <label for="signupConfirmPassword">Confirm Password:</label>
+                <input type="password" id="signupConfirmPassword" name="signupConfirmPassword" required>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+
     <footer class="footer-section">
         <div class="footer-container">
             
@@ -192,6 +231,55 @@
         var targetBlock = document.getElementById('sidebar');
         var targetBlock1 = document.getElementById('backgroundSidebar');
         targetBlock.style.display = 'none';
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var loginModal = document.getElementById('loginModal');
+        var signupModal = document.getElementById('signupModal');
+        var loginBtn = document.querySelectorAll('.login');
+        var signupBtn = document.querySelectorAll('.signup');
+        var loginClose = document.getElementById('loginClose');
+        var signupClose = document.getElementById('signupClose');
+
+        loginBtn.forEach(btn => {
+            btn.addEventListener('click', function () {
+                loginModal.style.display = 'block';
+            });
+        });
+
+        signupBtn.forEach(btn => {
+            btn.addEventListener('click', function () {
+                signupModal.style.display = 'block';
+            });
+        });
+
+        loginClose.onclick = function () {
+            loginModal.style.display = 'none';
+        }
+
+        signupClose.onclick = function () {
+            signupModal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == loginModal) {
+                loginModal.style.display = 'none';
+            }
+            if (event.target == signupModal) {
+                signupModal.style.display = 'none';
+            }
+        }
+
+        // Form Validation
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            var password = document.getElementById('signupPassword').value;
+            var confirmPassword = document.getElementById('signupConfirmPassword').value;
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert('Passwords do not match!');
+            }
+        });
     });
 </script>
 

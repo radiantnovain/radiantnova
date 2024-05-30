@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -133,7 +133,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
         </div>
@@ -145,33 +145,33 @@
                 <h2>Most Bought Products</h2>
             </div>
             <div class="scroll">
-            <div class="image-cards-container">
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 1">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 2">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 3">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 4">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 5">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 6">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 7">
-                    <div class="title-overlay">Product 1</div>
-                </div>
-                <div class="image-card"><img src="https://picsum.photos/200" alt="Product 8">
-                    <div class="title-overlay">Product 1</div>
+                <div class="image-cards-container">
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 1">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 2">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 3">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 4">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 5">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 6">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 7">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
+                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 8">
+                        <div class="title-overlay">Product 1</div>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="mostbought-items-sub">
             <div class="mostbought-title">
@@ -249,7 +249,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -315,7 +315,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
             <div class="item">
@@ -337,7 +337,7 @@
                     </div>
                 </div>
                 <div class="lower-btn">
-                    Buy Now
+                    <a href="/order-detail"> Buy Now </a>
                 </div>
             </div>
         </div>
@@ -347,17 +347,17 @@
         <div class="svg-special-gift">
             <img src="{{URL::asset('imgs/gift.svg');}}" alt="">
         </div>
-    <div class="content-special-gift">
-        <div class="main-text">
-            Special Gifts for Special ones
+        <div class="content-special-gift">
+            <div class="main-text">
+                Special Gifts for Special ones
+            </div>
+            <div class="main-text-2">
+                Get Special Discount on Gift purchase
+            </div>
+            <div class="special-gift-button">
+                <button>Grab Now</button>
+            </div>
         </div>
-        <div class="main-text-2">
-            Get Special Discount on Gift purchase
-        </div>
-        <div class="special-gift-button">
-            <button>Grab Now</button>
-        </div>
-    </div>
     </div>
 </div>
 
@@ -374,5 +374,16 @@
     });
 
     var lastScrollTop = 0;
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const buyNowButtons = document.querySelectorAll('.buy-now-btn');
+
+        buyNowButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                window.location.href = '/order-detail';
+            });
+        });
+    });
 </script>
 @endsection
