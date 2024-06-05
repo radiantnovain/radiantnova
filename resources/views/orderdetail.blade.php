@@ -76,27 +76,130 @@
                         <a href="/order-detail"> Buy Now </a>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="item-2">
+                        <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                        <div class="item-content">
+                            <div class="first-line-product">
+                                <div class="product-heading">
+                                    <h3>Product Name 1</h3>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    Add to Cart
+                                </div>
+                            </div>
+                            <p class="description">Description will appear here for this product or item.</p>
+                            <p class="price">$19.99</p>
+                            <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                        </div>
+                    </div>
+                    <div class="lower-btn">
+                        <a href="/order-detail"> Buy Now </a>
+                    </div>
+                </div> <div class="item">
+                    <div class="item-2">
+                        <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                        <div class="item-content">
+                            <div class="first-line-product">
+                                <div class="product-heading">
+                                    <h3>Product Name 1</h3>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    Add to Cart
+                                </div>
+                            </div>
+                            <p class="description">Description will appear here for this product or item.</p>
+                            <p class="price">$19.99</p>
+                            <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                        </div>
+                    </div>
+                    <div class="lower-btn">
+                        <a href="/order-detail"> Buy Now </a>
+                    </div>
+                </div> <div class="item">
+                    <div class="item-2">
+                        <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                        <div class="item-content">
+                            <div class="first-line-product">
+                                <div class="product-heading">
+                                    <h3>Product Name 1</h3>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    Add to Cart
+                                </div>
+                            </div>
+                            <p class="description">Description will appear here for this product or item.</p>
+                            <p class="price">$19.99</p>
+                            <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                        </div>
+                    </div>
+                    <div class="lower-btn">
+                        <a href="/order-detail"> Buy Now </a>
+                    </div>
+                </div> <div class="item">
+                    <div class="item-2">
+                        <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                        <div class="item-content">
+                            <div class="first-line-product">
+                                <div class="product-heading">
+                                    <h3>Product Name 1</h3>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    Add to Cart
+                                </div>
+                            </div>
+                            <p class="description">Description will appear here for this product or item.</p>
+                            <p class="price">$19.99</p>
+                            <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                        </div>
+                    </div>
+                    <div class="lower-btn">
+                        <a href="/order-detail"> Buy Now </a>
+                    </div>
+                </div> <div class="item">
+                    <div class="item-2">
+                        <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                        <div class="item-content">
+                            <div class="first-line-product">
+                                <div class="product-heading">
+                                    <h3>Product Name 1</h3>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    Add to Cart
+                                </div>
+                            </div>
+                            <p class="description">Description will appear here for this product or item.</p>
+                            <p class="price">$19.99</p>
+                            <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                        </div>
+                    </div>
+                    <div class="lower-btn">
+                        <a href="/order-detail"> Buy Now </a>
+                    </div>
+                </div> <div class="item">
+                    <div class="item-2">
+                        <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                        <div class="item-content">
+                            <div class="first-line-product">
+                                <div class="product-heading">
+                                    <h3>Product Name 1</h3>
+                                </div>
+                                <div class="add-to-cart-btn">
+                                    Add to Cart
+                                </div>
+                            </div>
+                            <p class="description">Description will appear here for this product or item.</p>
+                            <p class="price">$19.99</p>
+                            <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                        </div>
+                    </div>
+                    <div class="lower-btn">
+                        <a href="/order-detail"> Buy Now </a>
+                    </div>
+                </div>
                 <!-- Repeat for other items... -->
             </div>
         </div>
-    </div>
-
-    <div class="product-specifications">
-        <h3>Technical Specifications</h3>
-        <table>
-            <tr>
-                <th>Specification</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Specification 1</td>
-                <td>Details of Specification 1</td>
-            </tr>
-            <tr>
-                <td>Specification 2</td>
-                <td>Details of Specification 2</td>
-            </tr>
-        </table>
     </div>
 </div>
 
