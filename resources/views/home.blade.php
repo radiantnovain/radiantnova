@@ -28,7 +28,6 @@
         <div class="item-slider">
             <div class="item">
                 <div class="item-2">
-
                     <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
                     <div class="item-content">
                         <div class="first-line-product">
