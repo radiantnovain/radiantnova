@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\OrderController;
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/order-detail', [OrderController::class, 'orderDetail']);
+Route::get('/admin/login', [AdminController::class, 'login']);

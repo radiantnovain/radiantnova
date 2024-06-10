@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu Sans", sans-serif;
+    background-color: #f1f1f2; /* background color */
+    color: #333;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-container-left,
+.login-container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container-left {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-container-right {
+    flex: 1.5;
+    background-color: #f1f1f2; /* background color */
+    display: none; /* Hide the right container on small screens */
+}
+
+@media (min-width: 768px) {
+    .login-container-right {
+        display: flex; /* Show the right container on medium and larger screens */
+    }
+}
+
+.left-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.titles {
+    margin: 20px 0;
+}
+
+.titles .heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #363537; /* primary color */
+}
+
+.titles .sub-heading {
+    font-size: 16px;
+    color: #777;
+}
+
+.form .container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #363537; /* primary color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c2b2b; /* slightly darker primary color */
+}
+
+.right-container img {
+    width: 80%;
+}
+
+@media (max-width: 767px) {
+    .login-container {
+        flex-direction: column;
+    }
+    
+    .login-container-left,
+    .login-container-right {
+        width: 100%;
+    }
+}
