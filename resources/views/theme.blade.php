@@ -34,89 +34,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <header>
-
-    <div class="logo-main">
-        <!-- <div class="logo">RadiantNova </div><span class="dot"></span> -->
-        <img src="{{URL::asset('imgs/logo.png');}}" alt="">
-    </div>
-    <div class="bars" id="bar-button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="bar-icon"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-        </svg>
-    </div>
-    <div class="search">
-        <input  class="searchTerm" placeholder="What are you looking for?">
-        <button class="searchButton">
+        <div class="header-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
             </svg>
-        </button>
-    </div>
-    <div class="buttons">
-        <button class="login">Login</button>
-        <button class="signup">Signup</button>
-    </div>
-</header>
-<div class="sidebar" id="sidebar">
-    <div class="close-btn" id="closeBtnForSidebar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M0.75 23.249L23.25 0.749023" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M23.25 23.249L0.75 0.749023" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </div>
-    <div class="menus-sidebar">
-        <div class="sidebar-search">
-            <div class="search-2">
-                <input type="text" class="searchTerm" placeholder="Search...">
-                <button type="submit" class="searchButton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                    </svg>
-                </button>
-            </div>
         </div>
-        <div class="sidebar-buttons">
-            <div class="buttons-2">
-                <button class="login">Login</button>
-                <button class="signup">Signup</button>
-
-            </div>
+        <div class="logo-container">
+            <h1>RadiantNova</h1>
         </div>
-        <div class="sidebar-pages">
-            <div class="sub-header-2">
-                <div class="sub-header-item active">Home</div>
-                <div class="sub-header-item">Anime Characters</div>
-                <div class="sub-header-item">Stands</div>
-                <div class="sub-header-item">All Products</div>
-                <div class="sub-header-item">Help Center</div>
-
-
-
-            </div>
-
+        <div class="header-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1a1 1 0 0 1 1-1h1.528a.5.5 0 0 1 .493.418L3.89 3H14a1 1 0 0 1 .97 1.242l-1.2 6A1 1 0 0 1 12.8 11H5.621l-.375 1.5H14.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.484-.375L2.89 3H1v-.01a.5.5 0 0 1-.217-.076L0 1zM1.55 1L2.89 3H5l1 4.5L9.293 6H14l1-5H3.6L2.152 1H1.55zM5.5 12a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/>
+            </svg>
         </div>
-        <!-- <a href="#"><div class="menu-name-sidebar">HOME</div></a>
-    <a href="#"><div class="menu-name-sidebar">ABOUT</div></a>
-    <a href="#"><div class="menu-name-sidebar">SERVICES</div></a>
-    <a href="#"><div class="menu-name-sidebar">Gallery</div></a>
-    <a href="#"><div class="menu-name-sidebar">CONTACT US</div></a> -->
+    </header>
+    <div style="width: 100%;display: flex;justify-content: center;">
 
-
+        <div class="hr"></div>
     </div>
-</div>
-<div class="sub-header">
-    <div class="sub-header-item active">Home</div>
-    <div class="sub-header-item">Anime Characters</div>
-    <div class="sub-header-item">Stands</div>
-    <div class="sub-header-item">All Products</div>
-    <div class="sub-header-item">Help Center</div>
-
-
-
-</div>
+    <nav>
+        <ul>
+            <li><a href="#">Anime Characters</a></li>
+            <li><a href="#">Stands</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Key Chains</a></li>
+            <li><a href="#">Special Gifts</a></li>
+            <li><a href="#">Tableware</a></li>
+            <li><a href="#">All Products</a></li>
+        </ul>
+    </nav>
 
 
 

@@ -16,13 +16,35 @@
             <span class="shop-now-button">SHOP NOW</span>
         </div>
     </div>
-    <div class="trending-title">
-        <h2>Trending 3D Printed Products</h2>
-        <p class="subline">Discover the latest and most innovative 3D printed designs available today</p>
+
+    <div class="section">
+        <span>
+            What makes our brand different
+        </span>
     </div>
+    <section class="reasons-container">
+        <div class="reason">
+            <h3>Fast Delivery</h3>
+            <p>Swift delivery service ensures your packages arrive quickly and reliably.</p>
+        </div>
+        <div class="reason">
+            <h3>Made by true artisans</h3>
+            <p>Crafted by true artisans, exemplifies exceptional skill and attention to detail.</p>
+        </div>
+        <div class="reason">
+            <h3>Unbeatable prices</h3>
+            <p>For our materials and quality you won't find better prices anywhere</p>
+        </div>
+        <div class="reason">
+            <h3>Recycled packaging</h3>
+            <p>We use 100% recycled packaging to ensure our footprint is more manageable</p>
+        </div>
+    </section>
 
+    <div style="width: 100%;display: flex;justify-content: center;padding-top: 30px;">
 
-
+        <div class="hrs"></div>
+    </div>
     <!-- Trending Section -->
     <div class="trending-items">
         <div class="item-slider">
@@ -32,20 +54,15 @@
                     <div class="item-content">
                         <div class="first-line-product">
                             <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
+                                <span>Product Name 1</span>
                             </div>
                         </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
+
+                        <p class="price">₹ 1000</p>
                         <!-- <p class="rating">Rating: <span>4.2</span></p> -->
                     </div>
                 </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
+
             </div>
             <div class="item">
                 <div class="item-2">
@@ -54,20 +71,16 @@
                     <div class="item-content">
                         <div class="first-line-product">
                             <div class="product-heading">
-                                <h3>Product Name 1</h3>
+                                <span>Product Name 1</span>
                             </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
+
                         </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
+
+                        <p class="price">₹ 1000</p>
                         <!-- <p class="rating">Rating: <span>4.2</span></p> -->
                     </div>
                 </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
+
             </div>
             <div class="item">
                 <div class="item-2">
@@ -76,20 +89,16 @@
                     <div class="item-content">
                         <div class="first-line-product">
                             <div class="product-heading">
-                                <h3>Product Name 1</h3>
+                                <span>Product Name 1</span>
                             </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
+
                         </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
+
+                        <p class="price">₹ 1000</p>
                         <!-- <p class="rating">Rating: <span>4.2</span></p> -->
                     </div>
                 </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
+
             </div>
             <div class="item">
                 <div class="item-2">
@@ -98,266 +107,45 @@
                     <div class="item-content">
                         <div class="first-line-product">
                             <div class="product-heading">
-                                <h3>Product Name 1</h3>
+                                <span>Product Name 1</span>
                             </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
-                        </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-2">
 
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
                         </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
+
+                        <p class="price">₹ 1000</p>
                         <!-- <p class="rating">Rating: <span>4.2</span></p> -->
                     </div>
                 </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
+
             </div>
         </div>
     </div>
-
-    <div class="mostbought-items">
-        <div class="mostbought-items-main">
-            <div class="mostbought-title">
-                <h2>Most Bought Products</h2>
-            </div>
-            <div class="scroll">
-                <div class="image-cards-container">
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 1">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 2">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 3">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 4">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 5">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 6">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 7">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                    <div class="image-card"><img src="https://picsum.photos/200" alt="Product 8">
-                        <div class="title-overlay">Product 1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mostbought-items-sub">
-            <div class="mostbought-title">
-                <h2>Special offers</h2>
-            </div>
-            <div class="special-offer-container">
-                <div class="special-offer-card">
-                    <img src="https://picsum.photos/200" alt="Special Offer 1">
-                    <div class="offer-details">
-                        <h3>Special Offer 1</h3>
-                        <p>Details about special offer 1.</p>
-                        <!-- <p class="price">$19.99</p>
-                        <div><button class="add-to-cart-btn">Add to Cart</button></div> -->
-                    </div>
-                </div>
-                <div class="special-offer-card">
-                    <img src="https://picsum.photos/200" alt="Special Offer 1">
-                    <div class="offer-details">
-                        <h3>Special Offer 1</h3>
-                        <p>Details about special offer 1.</p>
-                    </div>
-                </div>
-                <div class="special-offer-card">
-                    <img src="https://picsum.photos/200" alt="Special Offer 1">
-                    <div class="offer-details">
-                        <h3>Special Offer 1</h3>
-                        <p>Details about special offer 1.</p>
-                    </div>
-                </div>
-                <div class="special-offer-card">
-                    <img src="https://picsum.photos/200" alt="Special Offer 1">
-                    <div class="offer-details">
-                        <h3>Special Offer 1</h3>
-                        <p>Details about special offer 1.</p>
-                    </div>
-                </div>
-                <div class="special-offer-card">
-                    <img src="https://picsum.photos/200" alt="Special Offer 1">
-                    <div class="offer-details">
-                        <h3>Special Offer 1</h3>
-                        <p>Details about special offer 1.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="view-collection">
+        <span>
+            View Collection
+        </span>
     </div>
+    
+    <div class="form">
+        <div class="form-container">
+            <div class="form-inner-container">
+                <span>
+                    Join the club and get the benefits
+                </span>
+                <br/>
+                <span>
+                    Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+                </span>
+                <div class="form-field">
 
-    <div class="trending-title">
-        <h2>Recommended for you</h2>
-        <p class="subline">Some special products for you</p>
-    </div>
-
-
-
-    <!-- Trending Section -->
-    <div class="trending-items">
-        <div class="item-slider">
-            <div class="item">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
-                        </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
             </div>
-            <div class="item">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
-                        </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
-                        </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
-                        </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <h3>Product Name 1</h3>
-                            </div>
-                            <div class="add-to-cart-btn">
-                                Add to Cart
-                            </div>
-                        </div>
-                        <p class="description">Description will appear here for this product or item.</p>
-                        <p class="price">$19.99</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-                <div class="lower-btn">
-                    <a href="/order-detail"> Buy Now </a>
-                </div>
+                <input/>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="special-gift">
-        <div class="svg-special-gift">
-            <img src="{{URL::asset('imgs/gift.svg');}}" alt="">
-        </div>
-        <div class="content-special-gift">
-            <div class="main-text">
-                Special Gifts for Special ones
-            </div>
-            <div class="main-text-2">
-                Get Special Discount on Gift purchase
-            </div>
-            <div class="special-gift-button">
-                <button>Grab Now</button>
-            </div>
-        </div>
-    </div>
+
 </div>
 
 <script>
