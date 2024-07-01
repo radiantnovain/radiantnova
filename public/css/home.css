@@ -501,11 +501,9 @@ color: #2A254B;
  }
 
 
-
  .form {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
     padding: 52px;
     margin-top: 50px;
@@ -515,42 +513,81 @@ color: #2A254B;
 .form-container {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    padding: 50px 0px;
+    padding: 50px 0;
     width: 1273px;
     background: #FFFFFF;
-
 }
 
-.form-inner-container{
+.form-inner-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 0px;
+    padding: 50px 0;
     width: 500px;
     background: #FFFFFF;
+}
+
+.title {
+width: 571px;
+height: 100px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 140%;
+text-align: center;
+color: #000000;
+flex: none;
+order: 0;
+flex-grow: 0;
 
 }
 
-.form-field input{
-    /* Text input */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-
-position: absolute;
-width: 472px;
-height: 56px;
-left: 400px;
-top: 254px;
-
-
+.subtitle {
+    padding-top: 16px;
+width: 470px;
+height: 48px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #000000;
+flex: none;
+flex-grow: 0;
 }
+
+.form-field {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-top: 22px;
+}
+
+.form-field input {
+    width: 351px; /* Adjust width to fit with the button */
+    height: 56px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:0%; /* Rounded corners only on the left */
+    border-right: none; /* Remove right border */
+}
+
+.sign-up-btn {
+    position: absolute;
+    right: 65px;
+    height: 56px;
+    padding: 0 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    top: 27px;
+}
+
 /* Responsive CSS */
 @media only screen and (max-width: 768px) {
     .hero {

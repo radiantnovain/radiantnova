@@ -127,22 +127,22 @@
     </div>
     
     <div class="form">
-        <div class="form-container">
-            <div class="form-inner-container">
-                <span>
-                    Join the club and get the benefits
-                </span>
-                <br/>
-                <span>
-                    Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
-                </span>
-                <div class="form-field">
-
-            </div>
-                <input/>
+    <div class="form-container">
+        <div class="form-inner-container">
+            <span class="title">
+                Join the club and get the benefits
+            </span>
+            <span class="subtitle">
+                Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+            </span>
+            <div class="form-field">
+                <input type="email" placeholder="your@email.com" />
+                <button class="sign-up-btn">Sign up</button>
             </div>
         </div>
     </div>
+</div>
+
 </div>
 
 
