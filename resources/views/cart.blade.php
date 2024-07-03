@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/orderdetail.css'); }} ">
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/cart.css'); }} ">
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/home.css'); }} ">
-<div class="detail-main-container">
+<div class="detail-main-container"> 
     <div class="shoping-cart-container">
         <div class="shoping-cart-inner-container">
             <h2>
