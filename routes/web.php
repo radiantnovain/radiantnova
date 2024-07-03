@@ -20,4 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/order-detail', [OrderController::class, 'orderDetail']);
+Route::get('/cart', [OrderController::class, 'Cart']);
 Route::get('/admin/login', [AdminController::class, 'login']);

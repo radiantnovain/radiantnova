@@ -48,7 +48,7 @@
     <!-- Trending Section -->
     <div class="trending-items">
         <div class="item-slider">
-            <div class="item">
+            <div class="item" data-url="order-detail">
                 <div class="item-2">
                     <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
                     <div class="item-content">
@@ -62,27 +62,8 @@
                         <!-- <p class="rating">Rating: <span>4.2</span></p> -->
                     </div>
                 </div>
-
             </div>
-            <div class="item">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <span>Product Name 1</span>
-                            </div>
-
-                        </div>
-
-                        <p class="price">₹ 1000</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-
-            </div>
-            <div class="item">
+            <div class="item" data-url="order-detail">
                 <div class="item-2">
 
                     <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
@@ -100,7 +81,25 @@
                 </div>
 
             </div>
-            <div class="item">
+            <div class="item" data-url="order-detail">
+                <div class="item-2">
+
+                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
+                    <div class="item-content">
+                        <div class="first-line-product">
+                            <div class="product-heading">
+                                <span>Product Name 1</span>
+                            </div>
+
+                        </div>
+
+                        <p class="price">₹ 1000</p>
+                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="item" data-url="order-detail">
                 <div class="item-2">
 
                     <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
@@ -125,23 +124,23 @@
             View Collection
         </span>
     </div>
-    
+
     <div class="form">
-    <div class="form-container">
-        <div class="form-inner-container">
-            <span class="title">
-                Join the club and get the benefits
-            </span>
-            <span class="subtitle">
-                Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
-            </span>
-            <div class="form-field">
-                <input type="email" placeholder="your@email.com" />
-                <button class="sign-up-btn">Sign up</button>
+        <div class="form-container">
+            <div class="form-inner-container">
+                <span class="title">
+                    Join the club and get the benefits
+                </span>
+                <span class="subtitle">
+                    Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+                </span>
+                <div class="form-field">
+                    <input type="email" placeholder="your@email.com" />
+                    <button class="sign-up-btn">Sign up</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 </div>
 
@@ -170,6 +169,13 @@
             button.addEventListener('click', function() {
                 window.location.href = '/order-detail';
             });
+        });
+    });
+
+    document.querySelectorAll('.item').forEach(item => {
+        item.addEventListener('click', () => {
+            const url = item.getAttribute('data-url');
+            window.location.href = url;
         });
     });
 </script>

@@ -9,7 +9,7 @@ body {
 
 .detail-main-container {
     padding: 20px;
-    background-color: #363537;
+    background-color: #ffff;
 }
 
 .container {
@@ -21,36 +21,52 @@ body {
 /* Product detail container */
 .product-detail-container {
     display: flex;
-    background: #f1f1f2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 /* Product gallery */
 .product-gallery {
+    display: flex;
     padding: 20px;
     position: relative;
+    gap: 10px;
+    flex-direction: row-reverse;
 }
 
 .product-gallery img {
     width: 100%;
     max-width: 400px;
-    border-radius: 8px;
+    height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+}
+.detail { 
+    padding: 10px 0px !important
+}
+.section-detail {
+    padding: 0px !important;
+    margin-top: 0px !important;
+width: 281px;
+height: 39px;
+left: 80px;
+top: 80px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+color: #2A254B;
 }
 
 .thumbnail-images {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
-}
+flex-direction: column;}
 
 .thumbnail-images img {
     width: 60px;
     height: 60px;
-    border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
@@ -67,8 +83,54 @@ body {
 }
 
 .product-details h2 {
-    margin-top: 0;
-    color: #333;
+    /* The Dandy Chair */
+
+    width: 285px;
+    height: 44px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.product-details p {
+    width: 58px;
+    height: 28px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #12131A;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    line-height: 0px;
+}
+
+.product-details span {
+    width: 87px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .product-price {
@@ -77,8 +139,29 @@ body {
     margin: 10px 0;
 }
 
+
 .product-description {
-    margin: 20px 0;
+    width: 87px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 10px;
+    display: contents;
+}
+
+.product-details ul {
+    margin: 25px;
+}
+
+.product-details li {
+    padding: 5px;
 }
 
 .buy-options {
@@ -191,6 +274,74 @@ body {
     background-color: #f4f4f4;
 }
 
+.buy-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy-options-p {
+    margin-right: 20px;
+}
+
+.quantity-controls {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 122px;
+    height: 43px; 
+}
+
+.control-button {
+    width: 46px ;
+    height: 43px;
+    border: none;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    text-align: center;
+    color: #CAC6DA;
+    font-size: 16px;
+}
+
+.control-button:focus {
+    outline: none;
+}
+.buy-options-lable {
+    padding: 10px;
+}
+
+#quantity {
+    width: 47px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding-top: 20px;
+    color: #F09321;
+    font-size: 16px;
+    font-family: Rubik;
+    background-color: #F9F9F9;
+}
+
+.add-to-cart {
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 147px;
+    height: 56px;
+    left: 419px;
+    top: 27px;
+}
+
+.add-to-cart:hover {
+    background-color: darkorange;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .product-detail-container {
@@ -212,6 +363,23 @@ body {
 
     .buy-options {
         flex-direction: column;
+    }
+
+    .buy-options-p {
+        width: 64px;
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .buy-options-p lable {
+        
     }
 
     .buy-options .btn {
