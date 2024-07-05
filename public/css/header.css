@@ -38,14 +38,14 @@ header {
     background-color: white;
 }
 
-.logo-container-navbar-svg { 
+.logo-container-navbar-svg {
     display: flex;
     gap: 16px;
 }
 
 .logo-container-detail-header-container {
-background: white !important;
-padding-bottom: 0px !important;
+    background: white !important;
+    padding-bottom: 0px !important;
 }
 
 .header-left svg,
@@ -128,7 +128,7 @@ nav ul li a:hover {
     position: absolute;
     right: 0;
     background-color: white;
-    box-shadow: 0px 20px 20px rgba(0,0,0,0.4);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
     z-index: 1;
     /* display: block; */
     top: 55px;
@@ -144,11 +144,12 @@ nav ul li a:hover {
 
 .dropdown-menu ul li {
     padding: 8px 16px;
-    border-bottom: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;
 }
 
 .dropdown-menu ul li:last-child {
-    border-bottom: none; /* Remove border from the last dropdown item */
+    border-bottom: none;
+    /* Remove border from the last dropdown item */
 }
 
 .dropdown-menu ul li a {
@@ -159,4 +160,127 @@ nav ul li a:hover {
 
 .dropdown-menu ul li:hover {
     background-color: #f1f1f1;
+}
+
+.modal-content {
+    height: 500px !important;
+    justify-content: center;
+    width: 757px !important;
+    max-width: 800px !important;
+    border-radius: 0px;
+}
+
+.modal-inner-container svg {
+    width: 100%;
+}
+.modal-inner-div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.modal-inner-div p{
+width: 316px;
+height: 44px;
+left: 566px;
+top: 402px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 44px;
+color: #3F3D56;
+}
+
+.modal-inner-div span{
+width: 579px;
+height: 58px;
+left: 433px;
+top: 446px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color: #434343;
+}
+
+.user-btn { 
+    background: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.modal-content span {
+    width: 579px;
+    height: 58px;
+    left: 433px;
+    top: 446px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0px;
+    color: #434343;
+}
+
+.modal-content p {
+    width: 316px;
+    height: 44px;
+    left: 566px;
+    top: 402px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0px;
+    color: #3F3D56;
+}
+
+.signupForm-field { 
+    display: flex;
+    gap: 20px;
+}
+
+.signupForm-field input {
+    background-color: #EBEBEB;
+    opacity: 30%;
+    color: black;
+}
+
+.signupForm-field ::placeholder{
+    color: #000;
+}
+
+.modal-content button {
+left: 25.28%;
+right: 25.42%;
+top: 52.63%;
+bottom: 43.56%;
+background: linear-gradient(90deg, #EA9A37 0%, #F7BA6F 100%);
+border-radius: 8px;
+}
+
+.loginhere span { 
+left: 433px;
+top: 756px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px !important;
+line-height: 30px;
+text-align: center;
+margin-left: 60px;
+color: #434343;
+}
+
+.loginhere { 
+    text-align: center;
 }
