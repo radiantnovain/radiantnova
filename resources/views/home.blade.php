@@ -13,7 +13,9 @@
             <div class="third-line">
                 Step into a realm where innovation meets imagination. Browse our curated selection of lifelike 3D items, crafted to elevate your digital experiences. Unleash your creativity today!
             </div>
+            <div>
             <span class="shop-now-button">SHOP NOW</span>
+            </div>
         </div>
     </div>
 

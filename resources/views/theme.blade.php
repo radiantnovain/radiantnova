@@ -76,6 +76,7 @@
 
     <div class="hr"></div>
 </div>
+<div class="nav-contain-class">
 <nav>
     <ul>
         <li><a href="#">Anime Characters</a></li>
@@ -87,6 +88,7 @@
         <li><a href="#">All Products</a></li>
     </ul>
 </nav>
+</div>
 
 
 

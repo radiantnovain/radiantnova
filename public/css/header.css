@@ -80,6 +80,7 @@ nav ul {
     list-style: none;
     padding: 10px 0;
     background-color: white;
+    overflow-x: auto;
 }
 
 nav ul li {
