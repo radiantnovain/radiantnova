@@ -22,3 +22,10 @@ Route::get('/', function () {
 Route::get('/order-detail', [OrderController::class, 'orderDetail']);
 Route::get('/cart', [OrderController::class, 'Cart']);
 Route::get('/admin/login', [AdminController::class, 'login']);
+Route::get('/admin/dashboard', [AdminController::class, 'admindashboard'])->name('admin/dashboard');
+Route::get('/admin/category', [AdminController::class, 'admincategory'])->name('admin/category');
+Route::get('/admin/product', [AdminController::class, 'adminproduct'])->name('admin/product');
+Route::get('/admin/product/add', [AdminController::class, 'adminaddproduct'])->name('admin/product/add');
+
+
+
