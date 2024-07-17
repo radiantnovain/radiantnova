@@ -51,7 +51,7 @@
 <body>
     <div class="header">
         <h2>RadiantNova</h2>
-        <button onclick="location.href='logout.php'" class="logout-btn-header">Go To Site</button>
+        <button onclick="location.href='/'" class="logout-btn-header">Go To Site</button>
     </div>
     <?php 
     $dashboardRoute; $categoryRoute; $productRoute;
@@ -80,7 +80,7 @@ if (Route::currentRouteName() == 'admin/dashboard' ) {
                 <li class="{{ $productRoute }}"><a href="/admin/product"><i class="fas fa-box"></i> Products</a></li>
                 <li><a href="#"><i class="fas fa-cog"></i> General Settings</a></li>
             </ul>
-            <button onclick="location.href='logout.php'" class="logout-btn">Logout</button>
+            <button onclick="location.href='/logout'" class="logout-btn">Logout</button>
         </div>
         <div class="main-content">
             @yield('content')
