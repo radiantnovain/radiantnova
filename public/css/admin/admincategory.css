@@ -1,3 +1,5 @@
+/* Add this to your CSS file */
+
 .category-container {
     width: 100%;
 }
@@ -9,14 +11,15 @@
     margin-bottom: 20px;
 }
 
-.category-header button{
+.category-header button {
     padding: 10px 20px;
-    background-color:#3f51b5;
+    background-color: #3f51b5;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -61,7 +64,7 @@ tbody td:first-child img {
 }
 
 /* Status dropdown styles */
-/* Status dropdown styles */.status {
+.status {
     position: relative;
     padding: 10px 40px 10px 10px; /* Adjust padding for arrow */
     border: none;
@@ -91,7 +94,6 @@ tbody td:first-child img {
     background-color: #fff;
     color: #333;
 }
-/* Styled options */
 
 /* Actions button styles */
 tbody td:last-child {
@@ -109,7 +111,7 @@ tbody td:last-child button {
 }
 
 tbody td:last-child button:hover {
-    background-color: #3f51b5;
+    background-color: #303f9f;
 }
 
 /* Responsive adjustments */
@@ -122,4 +124,105 @@ tbody td:last-child button:hover {
     tbody td:last-child button {
         padding: 8px 12px;
     }
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addCategoryForm, 
+#editCategoryForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#addCategoryForm label, 
+#editCategoryForm label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#addCategoryForm input, 
+#editCategoryForm input, 
+#addCategoryForm textarea, 
+#editCategoryForm textarea, 
+#addCategoryForm select, 
+#editCategoryForm select, 
+#addCategoryForm button, 
+#editCategoryForm button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#addCategoryForm button, 
+#editCategoryForm button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addCategoryForm button:hover, 
+#editCategoryForm button:hover {
+    background-color: #303f9f;
+}
+
+/* Alert styles */
+.alert {
+    padding: 15px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.alert.success {
+    background-color: #4CAF50; /* Green */
 }
