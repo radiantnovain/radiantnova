@@ -13,7 +13,7 @@
     <input type="text" id="category" name="category" required><br>
     <label for="images">Images:</label><br>
     <div class="file-uploader" id="fileUploader">
-        <input type="file" id="images" name="images[]" accept="image/*" multiple required>
+    <input type="file" id="imagesData" name="images[]" multiple accept="image/*">
         <span>Add Images +</span>
     </div>
     <div id="preview"></div>
@@ -22,29 +22,30 @@
     <button type="submit">Add Item</button>
 </form>
 
-<script src="{{ URL::asset('js/admin/multi-image-upload.js') }}">
+<script src="{{ URL::asset('js/admin/multi-image-upload.js') }}"></script>
+<script>
  document.addEventListener('DOMContentLoaded', function () {
     const fileUploader = document.getElementById('fileUploader');
-    const fileInput = document.getElementById('images');
+    const fileInput = document.getElementById('imagesData');
     const preview = document.getElementById('preview');
+    
+    // fileUploader.addEventListener('click', () => {
+    //     fileInput.click();
+    // });
 
-    fileUploader.addEventListener('click', () => {
-        fileInput.click();
-    });
+   
 
     fileInput.addEventListener('change', () => {
+        console.log(fileInput)
         preview.innerHTML = '';
-        const files = fileInput.files;
-        for (const file of files) {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                preview.appendChild(img);
-            };
-            reader.readAsDataURL(file);
-        }
-    });
+            for (const file of fileInput.files) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    preview.innerHTML += `<img src="${e.target.result}" alt="Image Preview">`;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
 });
 
 
