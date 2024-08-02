@@ -2,8 +2,8 @@
 
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/admin/adminaddproduct.css') }}">
-<form action="/action_page.php" method="post" enctype="multipart/form-data">
-    <label for="title">Title:</label><br>
+<form action="{{ route('admin.product.add') }}" method="post" enctype="multipart/form-data">
+    @csrf
     <input type="text" id="title" name="title" required><br>
     <label for="status">Status:</label><br>
     <input type="text" id="status" name="status" required><br>

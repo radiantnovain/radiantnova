@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Category;
+
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
@@ -32,7 +33,8 @@ class AdminController extends Controller
 
     public function adminaddproduct()
     {
-        return view('admin/adminaddproduct');
+        $categories = Category::where('status','active')->get();
+        return view('admin/adminaddproduct',compact('categories'));
     }
 
     public function categorystore(Request $request)

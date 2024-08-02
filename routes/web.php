@@ -3,7 +3,7 @@
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\OrderController;
 /*
 |--------------------------------------------------------------------------
@@ -33,9 +33,10 @@ Route::middleware('auth:sanctum')->get('/admin/dashboard', [AdminController::cla
 Route::middleware('auth:sanctum')->get('/admin/category', [AdminController::class, 'admincategory'])->name('admin/category');
 Route::middleware('auth:sanctum')->get('/admin/product', [AdminController::class, 'adminproduct'])->name('admin/product');
 Route::middleware('auth:sanctum')->get('/admin/product/add', [AdminController::class, 'adminaddproduct'])->name('admin/product/add');
-Route::post('/admin/categories/store', [AdminController::class, 'categorystore'])->name('admin.categories.store');
-Route::get('/admin/categories/list', [AdminController::class, 'list'])->name('admin.categories.list');
-Route::post('/admin/categories/update/{id}', [AdminController::class, 'update'])->name('admin.categories.update');
-Route::delete('/admin/categories/delete/{id}', [AdminController::class, 'destroy'])->name('admin.categories.destroy');
+Route::middleware('auth:sanctum')->post('/admin/categories/store', [AdminController::class, 'categorystore'])->name('admin.categories.store');
+Route::middleware('auth:sanctum')->get('/admin/categories/list', [AdminController::class, 'list'])->name('admin.categories.list');
+Route::middleware('auth:sanctum')->post('/admin/categories/update/{id}', [AdminController::class, 'update'])->name('admin.categories.update');
+Route::middleware('auth:sanctum')->delete('/admin/categories/delete/{id}', [AdminController::class, 'destroy'])->name('admin.categories.destroy');
+Route::middleware('auth:sanctum')->post('/admin/product/add', [ProductController::class, 'store'])->name('admin.product.add');
 
 
