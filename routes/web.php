@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\IndexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,16 +17,21 @@ use App\Http\Controllers\OrderController;
 |
 */
 
-// user routes
-Route::get('/', function () {
-    return view('home');
-});
+// Dashboard Route
+
+Route::get('/', [IndexController::class, 'Landingpage'])->name('home');
+
+
+// User routes
+// Route::get('/', function () {
+//     return view('home');
+// });
 
 Route::get('/order-detail', [OrderController::class, 'orderDetail']);
 Route::get('/cart', [OrderController::class, 'Cart']);
 
 
-// admin routes
+// Admin routes
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/admin/login', [AdminController::class, 'login'])->name('admin/login');
 Route::middleware('auth:sanctum')->get('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -37,6 +43,11 @@ Route::middleware('auth:sanctum')->post('/admin/categories/store', [AdminControl
 Route::middleware('auth:sanctum')->get('/admin/categories/list', [AdminController::class, 'list'])->name('admin.categories.list');
 Route::middleware('auth:sanctum')->post('/admin/categories/update/{id}', [AdminController::class, 'update'])->name('admin.categories.update');
 Route::middleware('auth:sanctum')->delete('/admin/categories/delete/{id}', [AdminController::class, 'destroy'])->name('admin.categories.destroy');
+
+// Add Product Routes
 Route::middleware('auth:sanctum')->post('/admin/product/add', [ProductController::class, 'store'])->name('admin.product.add');
 
-
+// New Product Routes
+Route::middleware('auth:sanctum')->get('/admin/product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
+Route::middleware('auth:sanctum')->put('/admin/product/{id}', [ProductController::class, 'update'])->name('admin.product.update');
+Route::middleware('auth:sanctum')->delete('/admin/product/{id}', [ProductController::class, 'destroy'])->name('admin.product.destroy');

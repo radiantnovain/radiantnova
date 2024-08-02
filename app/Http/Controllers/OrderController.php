@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Http\Controllers\Controller;
 
 
@@ -9,11 +10,15 @@ class OrderController extends Controller
 {
     public function OrderDetail()
     {
-        return view("orderdetail");
+    $categories = Category::where('status','active')->get();
+
+        return view("orderdetail",compact('categories'));
     }
 
     public function Cart()
     {
-        return view("cart");
+    $categories = Category::where('status','active')->get();
+
+        return view("cart",compact('categories'));
     }
 }

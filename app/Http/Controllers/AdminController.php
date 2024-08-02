@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Product;
+
 
 use Illuminate\Support\Facades\Storage;
 
@@ -28,7 +30,10 @@ class AdminController extends Controller
 
     public function adminproduct()
     {
-        return view('admin/adminproduct');
+
+        $product = Product::with('category')->get(); // Fetches the first product with its category
+    
+        return view('admin/adminproduct', ['product' => $product]);
     }
 
     public function adminaddproduct()

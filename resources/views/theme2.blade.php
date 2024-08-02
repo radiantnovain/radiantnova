@@ -48,13 +48,9 @@
     </div>
     <nav class="logo-container-navbar">
         <ul>
-            <li><a href="#">Anime Characters</a></li>
-            <li><a href="#">Stands</a></li>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Key Chains</a></li>
-            <li><a href="#">Special Gifts</a></li>
-            <li><a href="#">Tableware</a></li>
-            <li><a href="#">All Products</a></li>
+        @foreach($categories as $item)
+    <li><a href="#">{{$item->name}}</a></li>
+       @endforeach
         </ul>
     </nav>
     <div class="logo-container-navbar-svg">
