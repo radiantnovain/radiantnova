@@ -78,7 +78,6 @@ if (Route::currentRouteName() == 'admin/dashboard' ) {
                 <li class="{{ $dashboardRoute }}"><a href="/admin/dashboard"><i class="fas fa-chart-line"></i> Dashboard</a></li>
                 <li class="{{ $categoryRoute }}"><a href="/admin/category"><i class="fas fa-list"></i> Categories</a></li>
                 <li class="{{ $productRoute }}"><a href="/admin/product"><i class="fas fa-box"></i> Products</a></li>
-                <li><a href="#"><i class="fas fa-cog"></i> General Settings</a></li>
             </ul>
             <button onclick="location.href='/logout'" class="logout-btn">Logout</button>
         </div>

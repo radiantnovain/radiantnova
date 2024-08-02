@@ -11,7 +11,8 @@ label {
 
 input[type="text"],
 input[type="number"],
-textarea {
+textarea,
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -23,6 +24,16 @@ textarea {
 
 textarea {
     resize: vertical;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23999"><polygon points="0,0 10,10 20,0"/></svg>') no-repeat right center;
+    background-color: #fff;
+    background-position-x: calc(100% - 10px);
+    background-size: 10px;
 }
 
 .file-uploader {
@@ -85,5 +96,5 @@ button {
 }
 
 button:hover {
-    background-color: #3f51b5;
+    background-color: #303f9f;
 }
