@@ -62,7 +62,6 @@
                         </div>
 
                         <p class="price">₹ {{$item->price}}</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
                     </div>
                 </div>
             </div>

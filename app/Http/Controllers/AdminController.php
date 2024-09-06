@@ -36,6 +36,14 @@ class AdminController extends Controller
         return view('admin/adminproduct', ['product' => $product]);
     }
 
+    public function adminorderlisting()
+    {
+
+        // $product = Product::with('category')->get(); // Fetches the first product with its category
+    
+        return view('admin/adminorderlisting');
+    }
+
     public function adminaddproduct()
     {
         $categories = Category::where('status','active')->get();

@@ -51,3 +51,6 @@ Route::middleware('auth:sanctum')->post('/admin/product/add', [ProductController
 Route::middleware('auth:sanctum')->get('/admin/product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
 Route::middleware('auth:sanctum')->put('/admin/product/{id}', [ProductController::class, 'update'])->name('admin.product.update');
 Route::middleware('auth:sanctum')->delete('/admin/product/{id}', [ProductController::class, 'destroy'])->name('admin.product.destroy');
+
+// Order-listing page
+Route::middleware('auth:sanctum')->get('/admin/orderlisting', [AdminController::class, 'adminorderlisting'])->name('admin/orderlisting');

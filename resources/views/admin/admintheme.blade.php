@@ -71,6 +71,12 @@ if (Route::currentRouteName() == 'admin/dashboard' ) {
                         } else {
                             $productRoute = '';
                         }
+
+                        if (Route::currentRouteName() == 'admin/orderlisting' ) {
+                            $orderroute = 'active-class';
+                        } else {
+                            $orderroute = '';
+                        }
     ?>
     <div class="container">
         <div class="sidebar">
@@ -78,6 +84,7 @@ if (Route::currentRouteName() == 'admin/dashboard' ) {
                 <li class="{{ $dashboardRoute }}"><a href="/admin/dashboard"><i class="fas fa-chart-line"></i> Dashboard</a></li>
                 <li class="{{ $categoryRoute }}"><a href="/admin/category"><i class="fas fa-list"></i> Categories</a></li>
                 <li class="{{ $productRoute }}"><a href="/admin/product"><i class="fas fa-box"></i> Products</a></li>
+                <li class="{{ $orderroute }}"><a href="/admin/orderlisting"><i class="fas fa-box"></i> Order Listing</a></li>
             </ul>
             <button onclick="location.href='/logout'" class="logout-btn">Logout</button>
         </div>
