@@ -27,7 +27,7 @@ Route::get('/', [IndexController::class, 'Landingpage'])->name('home');
 //     return view('home');
 // });
 
-Route::get('/order-detail', [OrderController::class, 'orderDetail']);
+Route::get('/order-detail/{id}', [OrderController::class, 'orderDetail']);
 Route::get('/cart', [OrderController::class, 'Cart']);
 
 

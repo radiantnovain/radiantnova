@@ -4,7 +4,6 @@
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/orderdetail.css'); }} ">
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/home.css'); }} ">
 <div class="detail-main-container">
-
     <div class="product-detail-container">
         <div class="product-gallery">
             <div class="main-image-container" id="mainImageContainer">
@@ -16,26 +15,12 @@
                 <img src="https://picsum.photos/200?image=3" alt="Thumbnail 3" class="thumbnail">
             </div>
         </div>
-
         <div class="product-details">
-            <h2>Product Name</h2>
-            <p class="product-price">$19.99</p>
+            <h2>{{$product->title}}</h2>
+            <p class="product-price">₹{{$product->price}}</p>
             <span>Description</span><br/>
-            <span class="product-description">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</span><br/>
-            <ul style="list-style-type: circle;">
-                <li>
-                Premium material
-                </li>
-                <li>
-                Premium material
-                </li>
-                <li>
-                Premium material
-                </li>
-                <li>
-                Premium material
-                </li>
-            </ul>
+            <span class="product-description">{{$product->description}}</span><br/>
+           
             <div class="buy-options">
         <div class="buy-options-p">
             <label for="quantity" class="buy-options-lable">Quantity :</label>

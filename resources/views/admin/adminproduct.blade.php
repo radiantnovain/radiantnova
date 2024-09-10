@@ -24,6 +24,8 @@
                     <th>Actions</th>
                 </tr>
             </thead>
+           
+            @if($product->count() > 0)
             <tbody>
                 @foreach($product as $item)
                 <tr>
@@ -46,6 +48,8 @@
                 @endforeach
                 <!-- Additional rows will be dynamically added -->
             </tbody>
+        
+@endif
         </table>
     </div>
 </div>

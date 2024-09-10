@@ -51,13 +51,14 @@
     <div class="trending-items">
         <div class="item-slider">
         @foreach($products as $item)
+       
             <div class="item" data-url="order-detail">
                 <div class="item-2">
                     <img class="product-img" src="{{ asset($item->random_image->image_path) }}" alt="{{ $item->title }}">
                     <div class="item-content">
                         <div class="first-line-product">
                             <div class="product-heading">
-                                <span>{{$item->title}}</span>
+                            <a href="/order-detail/{{$item->id}}">   <span>{{$item->title}}</span></a>
                             </div>
                         </div>
 
@@ -65,6 +66,7 @@
                     </div>
                 </div>
             </div>
+            
            @endforeach
         </div>
     </div>
@@ -116,7 +118,7 @@
 
         buyNowButtons.forEach(button => {
             button.addEventListener('click', function() {
-                window.location.href = '/order-detail';
+              //  window.location.href = '/order-detail';
             });
         });
     });
@@ -124,7 +126,7 @@
     document.querySelectorAll('.item').forEach(item => {
         item.addEventListener('click', () => {
             const url = item.getAttribute('data-url');
-            window.location.href = url;
+             //window.location.href = url;
         });
     });
 </script>
