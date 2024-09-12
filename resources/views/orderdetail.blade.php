@@ -41,75 +41,24 @@
     </div>
     <div class="trending-items detail">
         <div class="item-slider">
-            <div class="item" data-url="order-detail">
-                <div class="item-2">
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <span>Product Name 1</span>
-                            </div>
-                        </div>
+        @foreach($products as $item)
+       
+       <div class="item" data-url="order-detail">
+           <div class="item-2">
+               <img class="product-img" src="{{ asset($item->random_image->image_path) }}" alt="{{ $item->title }}">
+               <div class="item-content">
+                   <div class="first-line-product">
+                       <div class="product-heading">
+                       <a href="/order-detail/{{$item->id}}">   <span>{{$item->title}}</span></a>
+                       </div>
+                   </div>
 
-                        <p class="price">₹ 1000</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="item" data-url="order-detail">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <span>Product Name 1</span>
-                            </div>
-
-                        </div>
-
-                        <p class="price">₹ 1000</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-
-            </div>
-            <div class="item" data-url="order-detail">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <span>Product Name 1</span>
-                            </div>
-
-                        </div>
-
-                        <p class="price">₹ 1000</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-
-            </div>
-            <div class="item" data-url="order-detail">
-                <div class="item-2">
-
-                    <img class="product-img" src="https://picsum.photos/200" alt="3D Printed Product 1">
-                    <div class="item-content">
-                        <div class="first-line-product">
-                            <div class="product-heading">
-                                <span>Product Name 1</span>
-                            </div>
-
-                        </div>
-
-                        <p class="price">₹ 1000</p>
-                        <!-- <p class="rating">Rating: <span>4.2</span></p> -->
-                    </div>
-                </div>
-
-            </div>
+                   <p class="price">₹ {{$item->price}}</p>
+               </div>
+           </div>
+       </div>
+       
+      @endforeach
         </div>
     </div>
     <div class="view-collection">

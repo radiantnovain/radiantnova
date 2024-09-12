@@ -12,8 +12,12 @@ class OrderController extends Controller
     public function OrderDetail($id)
     {
     $categories = Category::where('status','active')->get();
+    $products = Product::where('status', 'active')->limit(4)->get();
+    $products->each(function ($product) {
+        $product->random_image = $product->randomImage();
+    });
     $product = Product::findOrFail($id);
-        return view("orderdetail",compact('categories','product'));
+        return view("orderdetail",compact('categories','product',"products"));
     }
 
     public function Cart()
