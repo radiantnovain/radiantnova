@@ -1,7 +1,78 @@
 @extends('theme')
 @section('content')
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/home.css'); }} ">
+<style>
+    .trending-items {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
+.item-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.item {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item-2 {
+    text-align: center;
+}
+
+.product-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-content {
+    margin-top: 10px;
+}
+
+.first-line-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2596be;
+}
+.product-heading a {
+    text-decoration: none;
+}
+.price {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .item-slider {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+</style>
 <div class="home-container">
     <div class="hero">
         <div class="right-hero">
@@ -19,34 +90,7 @@
         </div>
     </div>
 
-    <div class="section">
-        <span>
-            What makes our brand different
-        </span>
-    </div>
-    <section class="reasons-container">
-        <div class="reason">
-            <h3>Fast Delivery</h3>
-            <p>Swift delivery service ensures your packages arrive quickly and reliably.</p>
-        </div>
-        <div class="reason">
-            <h3>Made by true artisans</h3>
-            <p>Crafted by true artisans, exemplifies exceptional skill and attention to detail.</p>
-        </div>
-        <div class="reason">
-            <h3>Unbeatable prices</h3>
-            <p>For our materials and quality you won't find better prices anywhere</p>
-        </div>
-        <div class="reason">
-            <h3>Recycled packaging</h3>
-            <p>We use 100% recycled packaging to ensure our footprint is more manageable</p>
-        </div>
-    </section>
-
-    <div style="width: 100%;display: flex;justify-content: center;padding-top: 30px;">
-
-        <div class="hrs"></div>
-    </div>
+   
     <!-- Trending Section -->
     <div class="trending-items">
         <div class="item-slider">
@@ -70,31 +114,8 @@
            @endforeach
         </div>
     </div>
-    <div class="view-collection">
-        <a href="{{ route('AllProduct')}}">
-        <span>
-            View All Products
-        </span>
-        </a>
-    </div>
-
-    <div class="form">
-        <div class="form-container">
-            <div class="form-inner-container">
-                <span class="title">
-                    Join the club and get the benefits
-                </span>
-                <span class="subtitle">
-                    Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
-                </span>
-                <div class="form-field">
-                    <input type="email" placeholder="your@email.com" />
-                    <button class="sign-up-btn">Sign up</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+   
+   
 </div>
 
 

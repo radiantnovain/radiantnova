@@ -20,6 +20,8 @@ use App\Http\Controllers\IndexController;
 // Dashboard Route
 
 Route::get('/', [IndexController::class, 'Landingpage'])->name('home');
+Route::get('/all-product', [IndexController::class, 'AllProduct'])->name('AllProduct');
+
 
 
 // User routes

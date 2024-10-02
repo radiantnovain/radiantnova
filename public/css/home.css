@@ -151,12 +151,17 @@
 
 .item img {
     width: 100%;
-    height: 375px;
     border-bottom: 1px solid #ddd;
     /* Add padding to the image */
     padding: 0;
 }
-
+.view-collection a{
+    text-decoration: none;
+    color:black
+}
+.product-heading a {
+    text-decoration: none;
+}
 .item-content {
     padding-top: 0px !important;
 }
