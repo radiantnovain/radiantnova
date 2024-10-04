@@ -64,6 +64,32 @@
     color: #333;
     margin-top: 5px;
 }
+.filters {
+    padding: 0px 50px;
+    margin-top:15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.category-activated {
+    color: #fff !important;
+    background-color: #333;
+}
+.category:hover {
+    color: #fff !important;
+    background-color: #333;
+
+}
+.category {
+    cursor: pointer;
+    color: #333;
+    border-radius: 30px;
+    border: 1px solid #333;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -90,9 +116,34 @@
         </div>
     </div>
 
-   
+    <div class="filters">
+        <?php
+        $WithoutFilter;
+        if ($activeCategory == 'all') {
+            $WithoutFilter = 'category category-activated';
+        } else {
+            $WithoutFilter = 'category';
+        }
+        ?>
+        <a style="text-decoration:none" href="{{route('AllProduct')}}"> <span class="{{$WithoutFilter}}">All</span></a>
+        @foreach ($categories as $category)
+        <?php
+        $classNameOfcategories;
+        if ($activeCategory == $category->name) {
+            $classNameOfcategories = 'category category-activated';
+        } else {
+            $classNameOfcategories = 'category';
+        }
+        ?>
+        <a style="text-decoration:none" href="{{route('productByCategory',$category->name)}}"> <span class="{{$classNameOfcategories}}">{{ $category->name }}</span></a>
+
+        @endforeach
+
+
+    </div>
     <!-- Trending Section -->
     <div class="trending-items">
+        
         <div class="item-slider">
         @foreach($products as $item)
        

@@ -21,6 +21,8 @@ use App\Http\Controllers\IndexController;
 
 Route::get('/', [IndexController::class, 'Landingpage'])->name('home');
 Route::get('/all-product', [IndexController::class, 'AllProduct'])->name('AllProduct');
+Route::get('/all-product/of/{category}', [IndexController::class, 'productByCategory'])->name('productByCategory');
+
 
 
 
